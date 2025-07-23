@@ -241,13 +241,13 @@ def reservation_cancel():
 
     print("❌ Booking ID not found.")
 
-# menu 7:
+# menu 6:
 def promotion():
         print("\n========================================")
         print("Apply 5% discount for rentals >= 7 days")
         print("========================================\n")
 
-# menu 6:
+# menu 7:
 def payment():
     print("\n=== Payment Menu ===")
     booking_id = input("Enter Booking ID: ").strip().upper()
@@ -305,8 +305,8 @@ def main_menu():
         print("3. View Reservations")
         print("4. Edit Reservation")
         print("5. Cancel Reservation")
-        print("6. Make Payment")
-        print("7. Promotions")
+        print("6. Promotions")
+        print("7. Make Payment")
         print("8. Exit")
         choice = input("Choose menu (1-8): ")
 
@@ -321,9 +321,9 @@ def main_menu():
         elif choice == "5":
             reservation_cancel()
         elif choice == "6":
-            payment()
-        elif choice == "7":
             promotion()
+        elif choice == "7":
+            payment()
         elif choice == "8":
             print("👋 Thank you for using our service!")
             break
